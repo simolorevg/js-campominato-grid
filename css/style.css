@@ -30,3 +30,7 @@ body{
     align-items: center;
     border: 2px solid white;
 }
+.green{
+    background-color: green;
+    color: white;
+}
