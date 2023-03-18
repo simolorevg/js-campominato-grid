@@ -1,3 +1,4 @@
+//
 //creo array di numeri
 const numberList = [];
 //assegno i numeri da 1 a 100 alle celle dell'array
@@ -19,7 +20,7 @@ function greenNumber(){
  */
 function alertNumber(){
     let numberContent = this.innerText;
-    return alert(numberContent);
+    return console.log(numberContent);
 }
 /**
  * Descrizione: serve per poter inserire automaticamente i numeri all'interno della griglia
@@ -37,10 +38,8 @@ console.log(numberGrid);
 let gridNumber;//questa variabile mi servirà sia per l'inserimento dinamico dei numeri, ma anche per la visione del numero al click più tardi
 //inizio l'inserimento dinamico degli elementi
 for(let x = 0; x < numberList.length; x++){
-    gridNumber = createGridNumber(x);//eseguo la funzione createGridNumber per ogni elemento dell'array
+    gridNumber = createGridNumber(numberList[x]);//eseguo la funzione createGridNumber per ogni elemento dell'array
     gridNumber.addEventListener('click', greenNumber);//al click faccio diventare lo sfondo della cella verde
     gridNumber.addEventListener('click', alertNumber);//al click mostra il numero
     numberGrid.append(gridNumber);// lo inserisco all'interno della griglia genitore
 }
-
-
