@@ -6,7 +6,7 @@ for(let i = 1; i <= 100; i++){
 }
 //creo le funzioni
 /**
- * 
+ * Descrizione: colora lo sfondo di verde
  * @returns {StyleSheet}
  */
 function greenNumber(){
