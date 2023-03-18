@@ -1,13 +1,17 @@
+//creo array di numeri
 const numberList = [];
+//assegno i numeri da 1 a 100 alle celle dell'array
 for(let i = 1; i <= 100; i++){
     numberList.push(i);
-}//creo array di numeri
-for(let x = 0; x < numberList.length; x++){
-    document.getElementById('number-grid').innerHTML += `<div class = 'grid-item'>${numberList[x]}</div>`;
 }
+//assegno gli elementi dell'array al div number-grid dinamicamente
+const numberGrid = document.getElementById('number-grid');
+console.log(numberGrid);
+
 ////////////////
 //creo la funzione
-function whatIsThisNumber(){
-    this.classList.toggle('green');
+function greenNumber(){
+    return this.classList.toggle('green');
 }
+
 
